@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  
+  <title>ADB常用命令，自用 | Hexo</title>
+  <meta name="author" content="John Doe">
+  
+  <meta name="description" content="在工作中经常用到的adb命令抓取BUG日志，最经常使用的指令,-v是日志等级
+1adb logcat -v time &amp;gt; 文件名.log
+
+如果不使用手机录屏的话，也可以使用adb命令进行录屏，2是保存到电脑上面
+121、adb shell screenrecord /sdcard/demo.mp42、adb pull /sdcard/ demo.mp4
+也可以进行截图，与录屏差不多
+121、adb shell screencap -p /sdcard/01.png2、adb pull /sdcard/ 01.png">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="ADB常用命令，自用"/>
+  <meta property="og:site_name" content="Hexo"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+
+
+<meta name="generator" content="Hexo 8.0.0"></head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Hexo</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles.">
+			  <i class=""></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories.">
+			  <i class=""></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags.">
+			  <i class=""></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me.">
+			  <i class=""></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me.">
+			  <i class=""></i>RSS
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">
+			<h1> ADB常用命令，自用</h1>
+		</div>
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="在工作中经常用到的adb命令"><a href="#在工作中经常用到的adb命令" class="headerlink" title="在工作中经常用到的adb命令"></a>在工作中经常用到的adb命令</h1><p>抓取BUG日志，最经常使用的指令,-v是日志等级</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb logcat -v <span class="keyword">time</span> &gt; 文件名.<span class="built_in">log</span></span><br></pre></td></tr></table></figure>
+<hr>
+<p>如果不使用手机录屏的话，也可以使用adb命令进行录屏，2是保存到电脑上面</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1、adb shell screenrecord /sdcard/demo.mp4</span><br><span class="line">2、adb pull /sdcard/ demo.mp4</span><br></pre></td></tr></table></figure>
+<p>也可以进行截图，与录屏差不多</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1、adb shell screencap -p /sdcard/01.png</span><br><span class="line">2、adb pull /sdcard/ 01.png</span><br></pre></td></tr></table></figure>
+<hr>
+<span id="more"></span>
+<p>一般使用adb是用adb线连接的，如果没有adb线，我们可以使用无线连接的方式</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb connect ip地址:端口号</span><br></pre></td></tr></table></figure>
+<hr>
+<p>需要验证问题的时候，可以进行推包操作，在那之前，我们需要获取文件的读写权限</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">adb root</span><br><span class="line">adb remount</span><br><span class="line">//有时候设备可能不能直接remount，所以需要先root，在进行remount，接下来就能推包了</span><br><span class="line">adb push 包名 需要推的路径</span><br><span class="line">//推完后可以check下是否推成功</span><br><span class="line">//比如 </span><br><span class="line">adb push aa.apk /system/bin</span><br><span class="line">//推入后，我们可以</span><br><span class="line">adb shell  进入安卓终端，然后去刚刚的路径</span><br><span class="line"><span class="built_in">cd</span> /system/bin 然后查看文件的详细信息</span><br><span class="line"><span class="built_in">stat</span> aa.apk</span><br><span class="line"><span class="built_in">stat</span> 可以告诉你以下信息</span><br><span class="line">//文件是否存在</span><br><span class="line">//文件大小</span><br><span class="line">//权限（可读/可写/可执行）</span><br><span class="line">//所有者（root、shell 等）</span><br><span class="line">//创建、修改、访问时间</span><br></pre></td></tr></table></figure>
+<p>把包导出来，知道包名后，可以先查询它所在的路径，在导出包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">adb shell pm path com.aa.sssss</span><br><span class="line">然后返回这样的路径</span><br><span class="line">package:/system/app/aaaaa/aa.apk</span><br><span class="line">adb pull /system/app/aaaaa/aa.apk</span><br><span class="line">这样即可导出</span><br></pre></td></tr></table></figure>
+<hr>
+<p>推包后，可以</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">adb shell <span class="built_in">sync</span>  <span class="built_in">sync</span>用来把缓存的数据刷入 flash，避免因为缓存没写入导致替换失败</span><br><span class="line">查询进程</span><br><span class="line">adb shell “ ps | findstr com.gxa.service.mediacenterservice”</span><br><span class="line">| USER   | PID  | VSIZE | STATE | NAME                               |</span><br><span class="line">| ------ | ---- | ----- | ----- | ---------------------------------- |</span><br><span class="line">| system | 1981 | ...   | S     | com.gxa.service.mediacenterservice |</span><br><span class="line">可以看到，这个服务运行的进程 PID = 1981</span><br><span class="line">然后强制杀掉进程</span><br><span class="line">adb shell <span class="built_in">kill</span> -9 1981</span><br><span class="line">这个时候应用就会自动重启，查询应用版本号是否正确</span><br><span class="line">adb shell pm dump com.gxa.service.mediacenterservice | findstr version</span><br><span class="line">然后继续查询，看看PID</span><br><span class="line">adb shell ps | findstr com.gxa.service.mediacenterservice</span><br><span class="line">如果 PID 变成新的数字 → 代表服务已经用新包启动。</span><br></pre></td></tr></table></figure>	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
+    
+    
+    <a href="/2025/11/03/错误小结/" type="button" class="btn btn-default"><i
+                class="fa fa-arrow-circle-o-left"></i> Prev</a>
+    
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
+    
+    <a href="/2025/10/13/了解下汽车/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
+    
+
+    
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
+		
+	
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2025-10-20 
+	</div>
+	
+
+	<!-- categories -->
+    
+
+	<!-- tags -->
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
+
+
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2025 John Doe
+  
+      with help from <a href="http://hexo.io/" target="_blank">Hexo</a>,<a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-freemind/">Freemind</a>,<a href="http://getbootstrap.com/" target="_blank">Twitter Bootstrap</a> and <a href="http://getbootstrap.com/" target="_blank">BOOTSTRA.386</a>. 
+     <br> Theme by <a target="_blank" rel="noopener" href="http://github.com/wzpan/hexo-theme-freemind/">Freemind.386</a>.    
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+
+
+  
+<a id="gotop" href="#">   
+  <span>⬆︎TOP</span>
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+</body>
+   </html>

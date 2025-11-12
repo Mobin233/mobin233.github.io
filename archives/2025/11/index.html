@@ -6,7 +6,7 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Hexo</title>
+  <title>Archives: 2025/11 | Hexo</title>
   <meta name="author" content="John Doe">
   
   
@@ -91,173 +91,72 @@
 
   <div class="container">
   	<div class="content">
-    	 <div class="page-header logo">
-  <h1>Hexo<span class="blink-fast">∎</span></h1>
+    	 
+
+<!-- title -->
+<div class="page-header">
+  <h1 class="archive-title"><i class="fa fa-archive"></i> 2025/11</h1>
 </div>
 
 <div class="row page">
-
+  <!-- cols -->
+  
+  <div class="col-md-9">
 	
-	<div class="col-md-9">
-	
 
-		<div class="slogan">
+	  <div id="top_search"></div>
 
-
-		<i class="fa fa-heart blink-slow"></i>
-
-		Keep and carry on.
-
-</div>    
-
-		<div id="top_search"></div>
-		<div class="mypage">
+	  <div class="archive">
 		
-		<!-- title and entry -->
+		
 		
 			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2025/11/03/错误小结/" >失败总是贯穿人生始终~~~~~~~</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2025-11-03  </div>
-		</div>
-	</div>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="日常工作中常看到的失败命令"><a href="#日常工作中常看到的失败命令" class="headerlink" title="日常工作中常看到的失败命令"></a>日常工作中常看到的失败命令</h1><p>直接安装一个包</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb install XX.apk</span><br></pre></td></tr></table></figure>
-<p>但是弹出了</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Performing Streamed Install</span><br><span class="line">adb: failed to run abb_exec. Error: closed</span><br><span class="line">adb.exe: connect error <span class="keyword">for</span> write: closed</span><br></pre></td></tr></table></figure>
-<p>建议直接把包推进系统可读分区，然后进行手动安装，我这边的操作是</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adb push XX.apk /data/local/tmp/ </span><br><span class="line">adb shell pm install -r -d -t /data/local/tmp/XX.apk</span><br></pre></td></tr></table></figure>
-<p>看到success即为成功</p>
-
-	
-	</div>
-  <a type="button" href="/2025/11/03/错误小结/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
 			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2025/10/20/ADB常用命令/" >ADB常用命令，自用</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2025-10-20  </div>
-		</div>
-	</div>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="在工作中经常用到的adb命令"><a href="#在工作中经常用到的adb命令" class="headerlink" title="在工作中经常用到的adb命令"></a>在工作中经常用到的adb命令</h1><p>抓取BUG日志，最经常使用的指令,-v是日志等级</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb logcat -v <span class="keyword">time</span> &gt; 文件名.<span class="built_in">log</span></span><br></pre></td></tr></table></figure>
-<hr>
-<p>如果不使用手机录屏的话，也可以使用adb命令进行录屏，2是保存到电脑上面</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1、adb shell screenrecord /sdcard/demo.mp4</span><br><span class="line">2、adb pull /sdcard/ demo.mp4</span><br></pre></td></tr></table></figure>
-<p>也可以进行截图，与录屏差不多</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1、adb shell screencap -p /sdcard/01.png</span><br><span class="line">2、adb pull /sdcard/ 01.png</span><br></pre></td></tr></table></figure>
-<hr>
-	
-	</div>
-  <a type="button" href="/2025/10/20/ADB常用命令/#more" class="btn btn-default more">Read More</a>
-</div>
-
-		
+			<h4 class="archive-ul" data-toggle="collapse" data-target="#2025">2025<b class="caret"></b></h4>
+			<ul id="2025" class="collapse in">
 			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2025/10/13/了解下汽车/" >了解下汽车</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2025-10-13  </div>
-		</div>
-	</div>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
 		
-	
-	</div>
-  <a type="button" href="/2025/10/13/了解下汽车/#more" class="btn btn-default more">Read More</a>
-</div>
-
+		<li class="listing-item">
+		<span class="date_class"> 2025-11-03 </span> &raquo;
 		
-			
-	
-	<!-- display as entry -->
-<div class="row">
-	<div class="col-md-8">
-		<h3 class="title">
-			<a href="/2025/10/05/hello-world/" >My Way</a>
-		</h3>
-		</div>
-	<div class="col-md-4">
-		<div class="date">post @ 2025-10-05  </div>
-		</div>
-	</div>
-	
-
-
-			<div class="entry">
-  <div class="row">
-	
-	
-		<h1 id="————————"><a href="#————————" class="headerlink" title="————————&gt;&gt;&gt;&gt;&gt;&gt;"></a>————————&gt;&gt;&gt;&gt;&gt;&gt;</h1><p>等待快点过去多少个明天<br>看着自己已经慢慢长大一点<br>我的生活应该让我自己学会掌握~~</p>
-<h1 id="————————-1"><a href="#————————-1" class="headerlink" title="————————&gt;&gt;&gt;&gt;&gt;&gt;"></a>————————&gt;&gt;&gt;&gt;&gt;&gt;</h1>
-	
-	</div>
-  <a type="button" href="/2025/10/05/hello-world/#more" class="btn btn-default more">Read More</a>
-</div>
-
+		   <span class="title"><a href="/2025/11/03/错误小结/" >失败总是贯穿人生始终~~~~~~~</a></span>
 		
-
-		</div>
-
-		<!-- pagination -->
-		<div>
-  		<center>
-		<div class="pagination">
-
-   
-</div>
-
-  		</center>
-		</div>
-
+		</li>			
 		
 		
-	</div> <!-- col-md-9 -->
+		
+		<li class="listing-item">
+		<span class="date_class"> 2025-10-20 </span> &raquo;
+		
+		   <span class="title"><a href="/2025/10/20/ADB常用命令/" >ADB常用命令，自用</a></span>
+		
+		</li>			
+		
+		
+		
+		<li class="listing-item">
+		<span class="date_class"> 2025-10-13 </span> &raquo;
+		
+		   <span class="title"><a href="/2025/10/13/了解下汽车/" >了解下汽车</a></span>
+		
+		</li>			
+		
+		
+		
+		<li class="listing-item">
+		<span class="date_class"> 2025-10-05 </span> &raquo;
+		
+		   <span class="title"><a href="/2025/10/05/hello-world/" >My Way</a></span>
+		
+		</li>			
+		
+		</ul>
+		</div>
 
-	
-		<div class="col-md-3">
+</div> <!-- col-md-9/col-md-12 -->
+
+
+<div class="col-md-3">
 	<div id="sidebar">
 	
 			
@@ -321,9 +220,9 @@
 	</div> <!-- sidebar -->
 </div> <!-- col-md-3 -->
 
-	
-	
-</div> <!-- row-fluid -->
+
+
+
 	</div>
   </div>
   <div class="container-narrow">

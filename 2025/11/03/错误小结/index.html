@@ -6,13 +6,18 @@
   <meta http-equiv="cache-control" content="no-cache">
   <meta http-equiv="expires" content="0">
   
-  <title>Archives: 2025 | Hexo</title>
+  <title>失败总是贯穿人生始终~~~~~~~ | Hexo</title>
   <meta name="author" content="John Doe">
+  
+  <meta name="description" content="日常工作中常看到的失败命令直接安装一个包
+1adb install XX.apk
+但是弹出了
+123Performing Streamed Installadb: failed to run abb_exec. Error: closedadb.exe: connect error for writ">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="失败总是贯穿人生始终~~~~~~~"/>
   <meta property="og:site_name" content="Hexo"/>
 
   
@@ -93,133 +98,99 @@
   	<div class="content">
     	 
 
-<!-- title -->
-<div class="page-header">
-  <h1 class="archive-title"><i class="fa fa-archive"></i> 2025</h1>
-</div>
 
-<div class="row page">
-  <!-- cols -->
-  
-  <div class="col-md-9">
 	
-
-	  <div id="top_search"></div>
-
-	  <div class="archive">
-		
-		
-		
-			
-			
-			<h4 class="archive-ul" data-toggle="collapse" data-target="#2025">2025<b class="caret"></b></h4>
-			<ul id="2025" class="collapse in">
-			
-		
-		<li class="listing-item">
-		<span class="date_class"> 2025-11-03 </span> &raquo;
-		
-		   <span class="title"><a href="/2025/11/03/错误小结/" >失败总是贯穿人生始终~~~~~~~</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2025-10-20 </span> &raquo;
-		
-		   <span class="title"><a href="/2025/10/20/ADB常用命令/" >ADB常用命令，自用</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2025-10-13 </span> &raquo;
-		
-		   <span class="title"><a href="/2025/10/13/了解下汽车/" >了解下汽车</a></span>
-		
-		</li>			
-		
-		
-		
-		<li class="listing-item">
-		<span class="date_class"> 2025-10-05 </span> &raquo;
-		
-		   <span class="title"><a href="/2025/10/05/hello-world/" >My Way</a></span>
-		
-		</li>			
-		
-		</ul>
+		<div class="page-header">
+			<h1> 失败总是贯穿人生始终~~~~~~~</h1>
 		</div>
-
-</div> <!-- col-md-9/col-md-12 -->
-
-
-<div class="col-md-3">
-	<div id="sidebar">
 	
-			
-  <div id="site_search">
-   <div class="form-group">
-    <input type="text" id="local-search-input" name="q" results="0" placeholder="Search" class="st-search-input st-default-search-input form-control"/>
-   </div>  
-  <div id="local-search-result"></div>
-  </div>
 
 
-		
-			
-		
-			
 
-		
-			
-<div class="widget">
-  <h4>Recent Posts</h4>
-  <ul class="entry list-unstyled">
+<div class="row post">
+	<!-- cols -->
+	
+	<div id="top_meta"></div>
+	<div class="col-md-9">
+	
+
+	<!-- content -->
+	<div class="mypage">		
+	  		
+
+	  <h1 id="日常工作中常看到的失败命令"><a href="#日常工作中常看到的失败命令" class="headerlink" title="日常工作中常看到的失败命令"></a>日常工作中常看到的失败命令</h1><p>直接安装一个包</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb install XX.apk</span><br></pre></td></tr></table></figure>
+<p>但是弹出了</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Performing Streamed Install</span><br><span class="line">adb: failed to run abb_exec. Error: closed</span><br><span class="line">adb.exe: connect error <span class="keyword">for</span> write: closed</span><br></pre></td></tr></table></figure>
+<p>建议直接把包推进系统可读分区，然后进行手动安装，我这边的操作是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adb push XX.apk /data/local/tmp/ </span><br><span class="line">adb shell pm install -r -d -t /data/local/tmp/XX.apk</span><br></pre></td></tr></table></figure>
+<p>看到success即为成功</p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+
     
-      <li>
-        <a href="/2025/11/03/错误小结/" ><i class="fa fa-file-o"></i>失败总是贯穿人生始终~~~~~~~</a>
-      </li>
     
-      <li>
-        <a href="/2025/10/20/ADB常用命令/" ><i class="fa fa-file-o"></i>ADB常用命令，自用</a>
-      </li>
+    <a type="button" class="btn btn-default disabled"><i class="fa fa-arrow-circle-o-left"></i>Prev</a>
     
-      <li>
-        <a href="/2025/10/13/了解下汽车/" ><i class="fa fa-file-o"></i>了解下汽车</a>
-      </li>
+
+    <a href="/" type="button" class="btn btn-default"><i class="fa fa-home"></i>Home</a>
     
-      <li>
-        <a href="/2025/10/05/hello-world/" ><i class="fa fa-file-o"></i>My Way</a>
-      </li>
+    <a href="/2025/10/20/ADB常用命令/" type="button" class="btn btn-default ">Next<i
+                class="fa fa-arrow-circle-o-right"></i></a>
     
-  </ul>
+
+    
 </div>
 
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+    <h2 class="title">Comments</h2>
+
+    
+</section>
+
+
+	</div> <!-- col-md-9/col-md-12 -->
 		
-			
-<div class="widget">
-	<h4>Links</h4>
-	<ul class="blogroll list-unstyled">
 	
-		<li><i class="fa fa-github"></i><a href="https://github.com/wzpan/hexo-theme-freemind" title="Freemind's Github repository." target="_blank">Freemind</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/kristopolous/BOOTSTRA.386" title="BOOTSTRA.386's Github repository." target="_blank">BOOTSTRA.386</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="https://github.com/blackshow/hexo-theme-freemind.386" title="Freemind.386's Github repository." target="_blank">Freemind.386</a></li>
-	
-		<li><i class="fa fa-github"></i><a href="http://www.github.com/blackshow" title="My Github account." target="_blank">My Github</a></li>
-	
-	</ul>
-</div>
+	<div id="side_meta">
+		<div class="col-md-3" id="post_meta"> 
 
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	2025-11-03 
+	</div>
+	
 
+	<!-- categories -->
+    
+
+	<!-- tags -->
 		
-	</div> <!-- sidebar -->
-</div> <!-- col-md-3 -->
 
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	</div>
+		
+
+</div><!-- row -->
 
 
 
